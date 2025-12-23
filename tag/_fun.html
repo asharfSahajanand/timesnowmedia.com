@@ -77,6 +77,43 @@
             googletag.enableServices();
         });
     </script>
+    <style>
+        .gri {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(134px, 1fr));
+            gap: 14px;
+            margin-top: 20px;
+        }
+        .gri > a {
+            display: block;
+            text-align: center;
+        }
+        .gri > a .img {
+            width: 100%;
+            height: 134px;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+        .gri > a .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .gri > a p {
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .gri > .ad {
+            grid-column: 1 / -1;
+            margin-bottom: 14px;
+        }
+    </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -489,7 +526,26 @@
 <script>
     //图片懒加载
     var lazyLoadImg = document.querySelectorAll(".lazyload");
+
+    // 为所有懒加载图片添加错误处理
+    lazyLoadImg.forEach(function(img) {
+        img.onerror = function() {
+            this.src = '../dist/www/img/imageDefault.png';
+            this.onerror = null; // 防止无限循环
+        };
+    });
+
     lazyload(lazyLoadImg);
+
+    // 图片加载失败时使用默认图片（全局错误处理）
+    document.addEventListener('error', function(e) {
+        if (e.target.tagName === 'IMG' && e.target.classList.contains('lazyload')) {
+            if (e.target.src && !e.target.src.includes('imageDefault.png')) {
+                e.target.src = '../dist/www/img/imageDefault.png';
+                e.target.onerror = null; // 防止无限循环
+            }
+        }
+    }, true);
 
     window.addEventListener("load", function(){
         window.cookieconsent.initialise({
