@@ -4202,19 +4202,6 @@ footer {
         min-height: 400px;
     }
     
-    .detail .boxes .RBox .ad-container {
-        width: 100% !important;
-        max-width: 300px !important;
-        margin: 20px auto !important;
-    }
-    
-    .detail .boxes .RBox .ad-container ins[data-ad-slot="2271585247"] {
-        width: 100% !important;
-        max-width: 300px !important;
-        height: auto !important;
-        min-height: 400px;
-    }
-    
     /* Box Main Layout */
     .box_main {
         flex-direction: column !important;
@@ -4354,6 +4341,171 @@ footer {
     .container {
         padding: 0 8px;
         max-width: 100%;
+    }
+}
+
+/* Desktop Styles (769px and above) - Ensure desktop view is not affected by mobile styles */
+@media screen and (min-width: 769px) {
+    /* Ensure detail page boxes display correctly on desktop */
+    .detail .boxes {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+    
+    .detail .boxes .LBox {
+        width: 880px !important;
+        margin-right: 20px !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .detail .boxes .LBox .gameTop {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch !important;
+        padding: 10px !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameName {
+        width: 170px !important;
+        max-width: 170px !important;
+        height: 325px !important;
+        padding: 15px 15px 0 !important;
+        margin-right: 10px !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameName .thum {
+        width: 140px !important;
+        height: 140px !important;
+        margin: 0 !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameName h2 {
+        width: 140px !important;
+        height: 54px !important;
+        font-size: 22px !important;
+        text-align: left !important;
+        margin: 10px 0 28px !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .Adbox {
+        width: 366px !important;
+        height: 325px !important;
+        padding: 0 15px !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameDetail {
+        width: 306px !important;
+        height: 325px !important;
+        margin-right: 10px !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameDetail .show_main {
+        padding: 0 40px !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameDetail .show_main li {
+        width: 224px !important;
+        margin-bottom: 25px !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameDetail .show_main li:nth-child(-n+2) {
+        margin-top: 40px !important;
+    }
+    
+    .detail .boxes .LBox .swiper_con {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    .detail .boxes .LBox .module {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    .detail .boxes .LBox .module h2 {
+        font-size: 28px !important;
+    }
+    
+    .detail .boxes .LBox .module .des {
+        font-size: 16px !important;
+        line-height: 1.6em !important;
+    }
+    
+    .detail .boxes .LBox .get {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    
+    .detail .boxes .LBox .get>h2 {
+        width: 178px !important;
+        margin-right: 50px !important;
+        margin-bottom: 0 !important;
+        border-radius: 0 40% 40% 0 !important;
+    }
+    
+    .detail .boxes .LBox .get .get_list {
+        display: flex !important;
+        flex-direction: row !important;
+        width: auto !important;
+        gap: 0 !important;
+    }
+    
+    .detail .boxes .LBox .get .get_list>li {
+        width: auto !important;
+    }
+    
+    .detail .boxes .RBox {
+        width: 300px !important;
+    }
+    
+    .detail .boxes .RBox .Adbox {
+        width: 356px !important;
+        max-width: 356px !important;
+    }
+    
+    .detail .boxes .RBox .ad-container {
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 20px auto !important;
+    }
+    
+    /* Ensure game lists display correctly on desktop */
+    .game_main .game_list,
+    .gameBox .game_list {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+    
+    .game_main .game_list>li,
+    .gameBox .game_list>li {
+        width: calc((100% - 60px)/7) !important;
+        margin-right: 10px !important;
+    }
+    
+    .game_main .game_list>li:nth-child(7n),
+    .gameBox .game_list>li:nth-child(7n) {
+        margin-right: 0 !important;
+    }
+    
+    .box_main {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    
+    .box_main .box_l {
+        width: 184px !important;
+        margin-right: 20px !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .box_main .box_r {
+        width: calc(100% - 204px) !important;
     }
 }
 
