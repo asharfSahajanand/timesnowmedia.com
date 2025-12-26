@@ -47,6 +47,8 @@ crossorigin="anonymous"></script>
     text-align: center;
     overflow: hidden;
     clear: both;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 .ad-container.horizontal {
     max-width: 468px;
@@ -55,13 +57,50 @@ crossorigin="anonymous"></script>
 .ad-container .adsbygoogle {
     display: block !important;
     margin: 0 auto;
+    max-width: 100%;
+}
+.ad-container .adsbygoogle ins {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+@media (max-width: 1024px) {
+    .ad-container.horizontal {
+        max-width: 728px;
+    }
 }
 @media (max-width: 768px) {
+    .ad-container {
+        margin: 15px auto;
+        padding: 0 5px;
+    }
     .ad-container.horizontal {
         max-width: 100%;
+        width: 100%;
     }
     .ad-container .adsbygoogle {
-        max-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .ad-container ins[data-ad-slot="5303930933"],
+    .ad-container ins[data-ad-slot="7464842801"],
+    .ad-container ins[data-ad-slot="2271585247"] {
+        width: 100% !important;
+        max-width: 320px !important;
+        height: auto !important;
+        min-height: 250px;
+    }
+    .ad-container ins[data-ad-slot="1091006147"],
+    .ad-container ins[data-ad-slot="8142024872"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 50px;
+    }
+}
+@media (max-width: 480px) {
+    .ad-container {
+        margin: 10px auto;
+        padding: 0;
     }
 }
 </style>
