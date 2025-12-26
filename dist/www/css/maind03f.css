@@ -3777,7 +3777,7 @@ footer {
 }
 
 .ad-container.horizontal {
-    max-width: 728px;
+    max-width: 970px;
     margin: 20px auto;
 }
 
@@ -3809,7 +3809,7 @@ footer {
     }
     
     .ad-container.horizontal {
-        max-width: 728px;
+        max-width: 970px;
     }
     
     .game_main .game_list,
@@ -4010,7 +4010,7 @@ footer {
     }
     
     /* Display Ad 1 (468x60) - Mobile: Full width */
-    /* Display Ad 1 (728x90) - Mobile: Full width */
+    /* Display Ad 1 (970x90) - Mobile: Full width */
     .ad-container ins[data-ad-slot="8142024872"] {
         width: 100% !important;
         max-width: 100% !important;
@@ -4069,8 +4069,119 @@ footer {
         margin-bottom: 20px;
     }
     
+    .detail .boxes .LBox .gameTop {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 15px !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameName {
+        width: 100% !important;
+        max-width: 200px !important;
+        height: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+        padding: 15px !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameName .thum {
+        width: 120px !important;
+        height: 120px !important;
+        margin: 0 auto;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameName h2 {
+        width: 100% !important;
+        height: auto !important;
+        font-size: 18px !important;
+        text-align: center;
+        margin: 10px 0 !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .Adbox {
+        width: 100% !important;
+        height: auto !important;
+        padding: 10px !important;
+        margin-bottom: 15px;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameDetail {
+        width: 100% !important;
+        height: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameDetail .show_main {
+        padding: 10px 20px !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameDetail .show_main li {
+        width: calc(50% - 10px) !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .detail .boxes .LBox .gameTop .gameDetail .show_main li:nth-child(-n+2) {
+        margin-top: 0 !important;
+    }
+    
+    .detail .boxes .LBox .swiper_con {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    .detail .boxes .LBox .swiper_con .swiper-container {
+        width: 100% !important;
+    }
+    
+    .detail .boxes .LBox .swiper_con .swiper-slide img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .detail .boxes .LBox .module {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    .detail .boxes .LBox .module h2 {
+        font-size: 18px !important;
+    }
+    
+    .detail .boxes .LBox .module .des {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+    
+    .detail .boxes .LBox .get {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .detail .boxes .LBox .get>h2 {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+        border-radius: 8px !important;
+    }
+    
+    .detail .boxes .LBox .get .get_list {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .detail .boxes .LBox .get .get_list>li {
+        width: 100% !important;
+    }
+    
     .detail .boxes .RBox {
         width: 100% !important;
+    }
+    
+    .detail .boxes .RBox .Adbox {
+        width: 100% !important;
+        max-width: 100% !important;
     }
     
     /* Box Main Layout */
@@ -4222,7 +4333,7 @@ footer {
     }
     
     .ad-container.horizontal {
-        max-width: 728px;
+        max-width: 970px;
     }
 }
 
