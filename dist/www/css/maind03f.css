@@ -3781,6 +3781,11 @@ footer {
     margin: 20px auto;
 }
 
+.ad-container:not(.horizontal) {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
 .ad-container .adsbygoogle {
     display: block !important;
     margin: 0 auto;
@@ -4018,12 +4023,12 @@ footer {
         min-height: 90px;
     }
     
-    /* Display Ad 2 (728x90) - Mobile: Full width */
+    /* Display Ad 2 (300x600) - Mobile: Full width */
     .ad-container ins[data-ad-slot="2271585247"] {
         width: 100% !important;
-        max-width: 100% !important;
+        max-width: 300px !important;
         height: auto !important;
-        min-height: 90px;
+        min-height: 400px;
     }
     
     /* Game Main Sections */
@@ -4182,6 +4187,32 @@ footer {
     .detail .boxes .RBox .Adbox {
         width: 100% !important;
         max-width: 100% !important;
+    }
+    
+    .detail .boxes .RBox .ad-container {
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 20px auto !important;
+    }
+    
+    .detail .boxes .RBox .ad-container ins[data-ad-slot="2271585247"] {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        min-height: 400px;
+    }
+    
+    .detail .boxes .RBox .ad-container {
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 20px auto !important;
+    }
+    
+    .detail .boxes .RBox .ad-container ins[data-ad-slot="2271585247"] {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        min-height: 400px;
     }
     
     /* Box Main Layout */
