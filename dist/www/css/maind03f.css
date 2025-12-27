@@ -2212,7 +2212,8 @@ header .extensionCon {
 }
 
 .detail .boxes .LBox {
-    width: 880px
+    width: 880px !important;
+    flex-shrink: 0 !important;
 }
 
 .detail .boxes .LBox .gameTop {
@@ -2370,7 +2371,8 @@ header .extensionCon {
 }
 
 .detail .boxes .RBox {
-    width: 300px
+    width: 300px !important;
+    flex-shrink: 0 !important;
 }
 
 .detail .boxes .RBox .Adbox {
@@ -3863,6 +3865,34 @@ footer {
     display: block !important;
     margin: 0 auto;
     max-width: 100%;
+}
+
+/* Inter Ads inside LBox - maintain layout */
+.detail .boxes .LBox .ad-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 15px 0 !important;
+    padding: 0 !important;
+    clear: both !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+.detail .boxes .LBox .ad-container.horizontal {
+    max-width: 100% !important;
+    margin: 15px 0 !important;
+}
+
+.detail .boxes .LBox .ad-container:not(.horizontal) {
+    max-width: 100% !important;
+    margin: 15px 0 !important;
+}
+
+/* Ensure content sections maintain their position */
+.detail .boxes .LBox .tags_game,
+.detail .boxes .LBox .similar {
+    margin-top: 20px !important;
+    clear: both !important;
 }
 
 /* Make ads responsive */
