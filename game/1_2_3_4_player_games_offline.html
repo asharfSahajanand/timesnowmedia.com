@@ -22,16 +22,49 @@
     })(window,document,'script','dataLayer','GTM-M2R2H3PH');</script> -->
 <!-- End Google Tag Manager -->
 
-<!-- Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11263793152">
-</script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+ <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17844760468"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'AW-11263793152');
-</script> -->
+        gtag('config', 'AW-17844640391');
+    </script> 
+
+<script type="text/javascript">
+        function reward(event, url, type) {
+            document.querySelector(".body-loading").style.display = "flex";
+            setTimeout(function () {
+                showTip(url, type);
+            }, 5000);
+        }
+        function showTip(url, type) {
+            document.querySelector(".body-loading .loader").style.display = "none";
+            document.querySelector(".tooltip").style.display = "block";
+            let text = type === "apple" ? "App Store" : "Google Play";
+            document.querySelector(".tooltip .tooltip-text p span").innerHTML = text;
+            document.querySelector(".tooltip-button-continue").href = url;
+            document
+                .querySelector(".tooltip-button-cancel")
+                .addEventListener("click", function () {
+                    document.querySelector(".body-loading").style.display = "none";
+                    window.location.reload();
+                });
+            document
+                .querySelector(".tooltip-button-continue")
+                .addEventListener("click", function () {
+                    document.querySelector(".body-loading").style.display = "none";
+                });
+
+
+            try {
+                gtag('event', 'conversion', { 'send_to': 'AW-17844640391/Nf-zCPmkpPcbEIe1_rxC' });
+            } catch (e) {
+                console.log(e);
+            }
+        }
+
+    </script>
 
 <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
 <script>
@@ -69,31 +102,7 @@
     })
 </script>
 
-   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
-    <script>
-        window.googletag = window.googletag || {cmd: []};
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/23330730517/playgamershub4u.com_d1', [336, 280], 'div-gpt-ad-1766492601819-0').addService(googletag.pubads());
-            googletag.pubads().collapseEmptyDivs();
-            googletag.enableServices();
-        });
-    </script>
-    <script>
-        window.googletag = window.googletag || {cmd: []};
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/23330730517/playgamershub4u.com_d2', [300, 600], 'div-gpt-ad-1766492646261-0').addService(googletag.pubads());
-            googletag.pubads().collapseEmptyDivs();
-            googletag.enableServices();
-        });
-    </script>
-    <script>
-       window.googletag = window.googletag || {cmd: []};
-       googletag.cmd.push(function() {
-          googletag.defineSlot('/23330730517/playgamershub4u.com_d3', [800, 300], 'div-gpt-ad-1766492699832-0').addService(googletag.pubads());
-           googletag.pubads().collapseEmptyDivs();
-          googletag.enableServices();
-        });
-   </script>
+   
 
 
     <style>
